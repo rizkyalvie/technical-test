@@ -19,6 +19,28 @@
         <a>Add Kabupaten</a>
     </div>
 </nav>
+
+<div class="container">
+    <div class="select">
+        <select name="category" id="cat">
+            <option value="provinsi">Provinsi</option>
+            <option value="kabupaten">Kabupaten</option>
+        </select>
+    </div>
+    <div class="cardContainer">
+        {{#each provinsi}}
+        <div>
+            <div class="card">
+                <img src="../public/assets/badung.png" alt="">
+                <h1>{{this.nama}}</h1>
+                <p>{{this.diresmikan}}</p>
+            </div>
+            <a href=""><button>Detail</button></a>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
 </body>
 
 </html>

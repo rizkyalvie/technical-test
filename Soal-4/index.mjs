@@ -34,9 +34,12 @@ app.get('/', (req,res) => {
       result.forEach((data) => {
         console.log(`${data.nama} -> ${data.pulau}`);
       });
+
+      const dataProvinsi = result
+
+      res.render('index', {provinsi: dataProvinsi})
     });
 
-    res.render('index')
 })
 
 

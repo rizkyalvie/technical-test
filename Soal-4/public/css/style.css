@@ -50,3 +50,60 @@ nav .right a{
     color: black;
     font-weight: bold;
 }
+
+.container{
+    padding: 1rem;
+}
+
+.container select{
+    color: black;
+}
+
+.cardContainer{
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cardContainer button{
+    width: 17.4rem;
+    background-color: rgb(4, 148, 214);
+    border: none;
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    padding: 0.2rem 0rem
+}
+
+.cardContainer button:hover{
+    cursor: pointer;
+    background-color: rgb(4, 160, 233);
+}
+
+.card{
+    width: 15rem;
+    height: 20rem;
+    padding: 1rem;
+    border: 0.2rem solid rgb(4, 148, 214);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card img{
+    object-fit: cover;
+    width: 100%
+}
+
+.card h1{
+    margin-top: 2rem;
+    text-align: center;
+    color: rgb(4, 148, 214)
+}
+
+.card p{
+    text-align: center;
+    color: white
+}
