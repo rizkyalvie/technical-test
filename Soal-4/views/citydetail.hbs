@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="detailContainer">
-            {{#each provinsi}}
+            {{#each kabupaten}}
                 <div class="image">
                     <img src={{this.photo}} alt="">
                 </div>
@@ -17,8 +17,8 @@
                 <p>{{this.diresmikan}}</p>
                 <div class="detailButton">
                 <a href="/">Back</a>
-                <a href="/delete-provinsi/{{this.id}}" id="delete">Delete</a>
-                <a href="/update-province/{{this.id}}" id="edit">Edit</a>
+                <a href="/delete-city/{{this.id}}" id="delete">Delete</a>
+                <a href="/update-city/{{this.id}}" id="edit">Edit</a>
             </div>
             {{/each}}
         </div>
