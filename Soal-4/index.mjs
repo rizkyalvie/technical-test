@@ -223,9 +223,9 @@ app.post('/addcity', upload.single('photo'), (req, res) => {
     let nama = req.body.nama
     let diresmikan = req.body.diresmikan
     let photo = req.file.filename
-    let provinsi = req.body.provinsi
+    let city = req.body.city
 
-    const sql = `INSERT INTO kabupaten_tb (nama, diresmikan, photo, provinsi_id) VALUES ('${nama}', '${diresmikan}', '${photo}', '${provinsi}');`;
+    const sql = `INSERT INTO kabupaten_tb (nama, diresmikan, photo, provinsi_id) VALUES ('${nama}', '${diresmikan}', '${photo}', '${city}');`;
 
     db.query(sql, function (err, result) {
       if (err) throw err;

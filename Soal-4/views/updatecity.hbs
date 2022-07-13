@@ -12,11 +12,11 @@
             {{#each kabupaten}}
                 <form action="/updatecity/{{id}}" method="POST" enctype='multipart/form-data'>
                 <label for="">Nama Kabupaten</label>
-                <input type="text" placeholder="Nama Provinsi" id="nama" name="nama" value="{{this.nama}}">
+                <input type="text" placeholder="Nama Kabupaten/Kota" id="nama" name="nama" value="{{this.nama}}">
                 <label for="">Tanggal Diresmikan</label>
                 <input type="text" placeholder="Tanggal Diresmikan" id="diresmikan" name="diresmikan" value={{this.diresmikan}}>
                 <input type="text" name="provinsi" value={{this.provinsi_id}} hidden>
-                <label for="">Logo Kabupatem</label>
+                <label for="">Logo Kabupaten</label>
                 <input type="file" id="photo" name="photo" value={{this.photo}}>
                 <a href="/">Back</a>
                 <button type="submit">Submit</button>

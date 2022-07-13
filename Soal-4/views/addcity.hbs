@@ -11,11 +11,11 @@
         <div class="formContainer">
             <form action="/addcity" method="POST" enctype='multipart/form-data'>
                 <label for="">Nama Kabupaten</label>
-                <input type="text" placeholder="Nama Provinsi" id="nama" name="nama">
+                <input type="text" placeholder="Nama Kabupaten/Kota" id="nama" name="nama">
                 <label for="">Tanggal Diresmikan</label>
                 <input type="text" placeholder="Tanggal Diresmikan" id="diresmikan" name="diresmikan">
                 <label for="">Provinsi</label>
-                <select name="provinsi" id="provinsi">
+                <select name="city" id="city">
                     {{#each provinsi}}
                         <option value={{this.id}}>{{this.nama}}</option>
                     {{/each}}
