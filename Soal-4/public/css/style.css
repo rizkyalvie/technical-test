@@ -9,6 +9,7 @@
 body {
     background-color: black !important;
     font-size: 62.5%;
+    color: white
 }
 
 nav{
@@ -41,7 +42,7 @@ nav .right{
     padding-right: 5rem
 }
 
-nav .right a{
+nav .right button{
     padding: 0.5rem;
     background-color: rgb(4, 148, 214);
     color: white;
@@ -49,8 +50,14 @@ nav .right a{
     font-size: 0.8rem;
     color: black;
     font-weight: bold;
+    border: none;
 }
 
+nav .right button:hover{
+    cursor: pointer;
+    background-color: rgb(4, 160, 233);
+}
+/* index */
 .container{
     padding: 1rem;
 }
@@ -90,11 +97,17 @@ nav .right a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    object-fit: cover;
+}
+
+.card .image{
+    width: 10rem;
+    margin: auto;
 }
 
 .card img{
     object-fit: cover;
-    width: 100%
+    width: 100%;
 }
 
 .card h1{
@@ -105,5 +118,60 @@ nav .right a{
 
 .card p{
     text-align: center;
-    color: white
+    color: white;
+    font-size: 1rem;
+}
+/* index */
+
+/* add province */
+
+.formContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    margin: auto;
+    margin-top: 10rem;;
+}
+
+.formContainer input{
+    width: 100%;
+    margin: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.formContainer label{
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.formContainer button{
+    width: 5rem;
+    background-color: rgb(4, 148, 214);
+    border: none;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    margin: 0rem 0.2rem;
+    float: end;
+    position: relative;
+    left: 35.5rem;
+}
+
+.formContainer button:hover{
+    cursor: pointer;
+    background-color: rgb(4, 160, 233);
+}
+
+.formContainer a{
+    background-color: rgb(4, 148, 214);
+    text-decoration: none;
+    color: black;
+    padding: 0.32rem 1.8rem;
+    border-radius: 0.3rem;
+    margin: 0rem 0.2rem;
+    float: end;
+    position: relative;
+    left: 35.5rem;
+    font-size: 0.8rem;;
 }

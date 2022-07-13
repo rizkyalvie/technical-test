@@ -15,8 +15,8 @@
         <h1>Provinsi & Kabupaten</h1>
     </div>
     <div class="right">
-        <a>Add Provinsi</a>
-        <a>Add Kabupaten</a>
+        <a href="/add-province"><button>Add Provinsi</button></a>
+        <a><button>Add Kabupaten</button></a>
     </div>
 </nav>
 
@@ -31,7 +31,9 @@
         {{#each provinsi}}
         <div>
             <div class="card">
-                <img src="../public/assets/badung.png" alt="">
+                <div class="image">
+                    <img src={{this.photo}} alt="">
+                </div>
                 <h1>{{this.nama}}</h1>
                 <p>{{this.diresmikan}}</p>
             </div>
